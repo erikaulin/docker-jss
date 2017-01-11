@@ -5,6 +5,6 @@ dest = "/usr/local/tomcat/conf/server.xml"
 keys = [
     "/tls/cert",
     "/tls/key",
+    "/pfx/cert",
 ]
 check_cmd = "catalina.sh configtest"
-

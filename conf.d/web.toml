@@ -1,0 +1,8 @@
+[template]
+prefix = "/web"
+src = "web.xml.tmpl"
+dest = "/usr/local/tomcat/webapps/ROOT/WEB-INF/web.xml"
+keys = [
+    "/security-constraint/web-resource-collection",
+]
+check_cmd = "catalina.sh configtest"

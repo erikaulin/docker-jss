@@ -1,5 +1,5 @@
 version: '2'
-services:  
+services:
   mysql:
     image: mysql
     volumes:
@@ -29,6 +29,13 @@ services:
       - JSS_DB_NAME=jamfsoftware
       - JSS_DB_USERNAME=jamfsoftware
       - JSS_DB_PASSWORD=jamfsw03
+      - SELF_SIGNED=0
+      - PFX_CERT=/cert/server.pfx
+      #- TLS_CERT=/cert/server.crt
+      #- TLS_KEY=/cert/server.key
+      #- CA_CERT=/cert/ca.crt
+    volumes:
+      - "./cert:/cert"
 
   samba:
     image: dperson/samba:latest

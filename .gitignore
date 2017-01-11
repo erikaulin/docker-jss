@@ -2,7 +2,11 @@ ROOT.war
 US_export_policy.jar
 local_policy.jar
 JSSDatabaseUtil.jar
+.DS_Store
 
 *.iml
 confd
 distribution_point/*
+cert/*.pfx
+licencekey
+slask
